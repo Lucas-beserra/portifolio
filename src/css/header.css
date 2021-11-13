@@ -1,0 +1,54 @@
+:root {
+  --teal: #008080;
+  --aqua: #00ffff;
+  --font: #fff;
+}
+
+.header {
+  padding: 15px 15px;
+  background: var(--teal);
+}
+
+.header .logo {
+  color: var(--font);
+  border: 1px solid var(--font);
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  line-height: 59px;
+  text-align: center;
+  text-decoration: underline;
+  transition: 1s;
+  margin: 0.5rem 2rem -3rem;
+}
+
+.header .logo:hover {
+  border-radius: 30%;
+  width: 70px;
+  height: 70px;
+  color: var(--aqua);
+  border: 1px solid var(--aqua);
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: right;
+  margin: -2rem 0 2rem;
+}
+
+.header nav li a {
+  color: var(--font);
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 8px 8px;
+  transition: 1s;
+  border-radius: 30%;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+.header nav li a:hover {
+  color: var(--aqua);
+  border-bottom: 1px solid var(--aqua);
+}
